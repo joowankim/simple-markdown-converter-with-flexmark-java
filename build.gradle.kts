@@ -24,6 +24,8 @@ dependencies {
 	implementation("com.vladsch.flexmark", "flexmark-all", "0.62.2")
 	implementation("org.springframework.boot", "spring-boot-starter-thymeleaf", "2.4.2")
 	implementation("org.thymeleaf", "thymeleaf", "3.0.12.RELEASE")
+	implementation("nz.net.ultraq.thymeleaf", "thymeleaf-layout-dialect", "2.5.2")
+
 
 
 }

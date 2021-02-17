@@ -23,17 +23,14 @@ class MDFileService {
             val document: Node = parser.parseReader(it)
             var html =
                 """
-                <!DOCTYPE html>
-                <html lang="en" xmlns:th="http://www.thymeleaf.org">
-                <head>
-                <meta charset="UTF-8">
-                <title>converted html</title>
-                </head>
-                <body>
+                <html xmlns:th="http://www.thymeleaf.org"
+                      xmlns:layout="http://www.utraq.net.nz/thymeleaf/layout"
+                      layout:decorate="layouts/layout">
+                <div layout:fragment="content">
                 """ +
                 renderer.render(document) +
                 """
-                </body>
+                </div>
                 </html>
                 """.trimIndent()
 

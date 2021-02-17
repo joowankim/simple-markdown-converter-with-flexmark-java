@@ -1,11 +1,8 @@
 
-                <!DOCTYPE html>
-                <html lang="en" xmlns:th="http://www.thymeleaf.org">
-                <head>
-                <meta charset="UTF-8">
-                <title>converted html</title>
-                </head>
-                <body>
+                <html xmlns:th="http://www.thymeleaf.org"
+                      xmlns:layout="http://www.utraq.net.nz/thymeleaf/layout"
+                      layout:decorate="layouts/layout">
+                <div layout:fragment="content">
                 <h1>8장 고차 함수: 파라미터와 반환 값으로 람다 사용</h1>
 <ul>
 <li>함수 타입</li>
@@ -492,5 +489,5 @@ Bob is not Alice
 <ul>
 <li>람다 식은 <code>fun</code>을 사용해 정의되지 않으므로 람다 본문의 <code>return</code>은 람다 밖에 함수를 반환시킨다.</li>
 </ul>
-</body>
+</div>
 </html>
