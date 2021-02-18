@@ -6,7 +6,6 @@ import com.vladsch.flexmark.util.ast.Node
 import com.vladsch.flexmark.util.data.MutableDataSet
 import org.springframework.stereotype.Service
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileReader
 import java.io.FileWriter
 
@@ -14,8 +13,8 @@ import java.io.FileWriter
 class MDFileService {
 
     fun convert2html(file: File, currentDir: String) {
-        val options = MutableDataSet()
 
+        val options = MutableDataSet()
         val parser = Parser.builder(options).build()
         val renderer = HtmlRenderer.builder(options).build()
 
